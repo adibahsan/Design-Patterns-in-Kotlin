@@ -1,3 +1,4 @@
+import decoratorpattern.BananaMilkShake
 import decoratorpattern.JustMilkShake
 
 fun main(args: Array<String>) {
@@ -5,4 +6,8 @@ fun main(args: Array<String>) {
     var justMilkShake =JustMilkShake()
     println("Regular Just Milk Shake")
     justMilkShake.getTaste()
+
+    var bananaMilkShake = BananaMilkShake(justMilkShake)
+    println("Banana Milk Shake")
+    bananaMilkShake.getTaste()
 }
